@@ -32,10 +32,13 @@ h1 {
 
 #social {
     float: right;
-    padding: 30px;
     display: flex;
     align-items: center;
-    
+    padding: 30px;
+}
+
+.socialbutton {
+    padding: 0 15px;
 }
 
 .panel {
