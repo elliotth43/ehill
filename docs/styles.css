@@ -1,53 +1,78 @@
+:root {
+  --base-color: #0e1926;
+  --header-color: #00397e;
+  --panel-color: #011f44;
+  --primary-text-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: var(--primary-text-color);
+}
+
 body {
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #0e1926;
-    color: white;
+  background-color: var(--base-color);
 }
 
-h1 {
-    padding: 5px;
+p {
+  margin: 0.5em 0; /*Need to think about this*/
 }
 
-#header {
-    position: fixed;
-    background-color: #00397e;
-    width: 100%;
-    padding: 0 8px;
-    margin: 0px;
-    font-size: 30px;
+a {
+  color: var(--text-color); /*Removes default link colour*/
 }
 
-#main {
-    padding: 112px 0 0;
-    margin: 12px;
-    margin-top: 0;
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#pagetitle {
-    float: left;
-    padding-left: 15px;
+header {
+  background-color: var(--header-color);
+}
+
+header .flex-container {
+  justify-content: space-between;
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+header h1 {
+  padding: 15px 30px;
 }
 
 #social {
-    float: right;
-    display: flex;
-    align-items: center;
-    padding: 30px;
+  padding: 15px 30px;
 }
 
-.socialbutton {
-    padding: 0 15px;
+#social a {
+  margin: 0 5px;
 }
 
-.panel {
-    background-color: #011f44;
-    padding: 10px;
+header a {
+  text-decoration: none;
 }
 
-.link {
-    padding: 5px;
-    font-size: large;
-    color: white;
+header a:hover {
+  text-decoration: underline;
+}
+
+section {
+  background-color: var(--panel-color);
+  margin: 1em auto;
+  width: min(50em, 90%);
+  padding: min(1em, 15%);
+}
+
+iframe {
+  max-width: 100%;
+  margin: 0.5em 0;
 }
