@@ -72,7 +72,12 @@ section {
   padding: min(1em, 15%);
 }
 
-iframe {
-  max-width: 100%;
+#drone {
+  overflow: hidden;
+}
+
+#drone iframe {
+  width: clamp(280px, 100%, 560px);
+  aspect-ratio: 560/315;
   margin: 0.5em 0;
 }
