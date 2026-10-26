@@ -37,6 +37,7 @@ a {
 
 header {
   background-color: var(--header-color);
+  overflow: hidden;
 }
 
 header .flex-container {
@@ -55,6 +56,20 @@ header h1 {
 
 #social a {
   margin: 0 5px;
+}
+
+nav ol {
+  max-width: 50em;
+  margin: 0 auto;
+  justify-content: left;
+  align-items: center;
+}
+
+nav li {
+  list-style-type: none;
+  padding: 0.5em;
+  margin: 0.5em;
+  background-color: var(--panel-color);
 }
 
 header a {
@@ -80,4 +95,12 @@ section {
   width: clamp(280px, 100%, 560px);
   aspect-ratio: 560/315;
   margin: 0.5em 0;
+}
+
+#cryptic-scores-div h1 {
+  font-size: 1.3rem;
+}
+
+.cryptic-card {
+  white-space: pre-wrap;
 }
